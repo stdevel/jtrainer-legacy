@@ -115,7 +115,7 @@ Translations
 ```
 
 #Known bugs
-- none so far :-)
+- answer checkboxes are not blanked or disabled if unsused
 
 #Notes
 This software is published under the terms of GNU Public License 3.0 - please read the attached file ``LICENSE``.
