@@ -1,6 +1,6 @@
 JTrainer is an exam simulator I wrote couple of years ago in Java. See also [the project website](http://jtrainer.stankowic-development.net) for more details and screenshots.
 
-Current version: **1.6** from 31th october 2012
+Current version: **1.61** from 8th October 2015
 
 
 
@@ -108,14 +108,14 @@ It is not possible to use old language files for newer JTrainer releases - you'l
 If you want to create your own language file have a look at the ``localizationFile`` class or copy an existing language file. The file line defines the JTrainer version the language file was built for.
 
 ```
-1.6
+1.61
 Author <email>
 Translations
 ...
 ```
 
 #Known bugs
-- answer checkboxes are not blanked or disabled if unsused
+- no known bugs so far ;-)
 
 #Notes
 This software is published under the terms of GNU Public License 3.0 - please read the attached file ``LICENSE``.
