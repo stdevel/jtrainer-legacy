@@ -1,0 +1,58 @@
+1.6
+Christian Stankowic <info@stankowic-development.net>
+Des Programm is noch ned fertisch.
+Gib bescheid wennde Fehler finnst.
+Uffbasse, wichtisch!
+JTrainer v.
+Dadei
+Kadalog uff mache
+Kadalogdetais
+Kadalogname:
+Beschreibung:
+Autor:
+Datum:
+Geschwätz üwwer
+Training abbreche
+Heer uff mi'm Training!
+Uffheern!
+Eistellunge
+Zufällisch
+De rei' nooch
+Aa mo
+ewisch
+?
+Üwwer...
+JTrainer is e Anwendun zum Trainiere vunn Wisse.
+JTrainer is quelloffe un werd unner de GPL-Lizenz veröffentlischt.
+Für meer Informationen gugg mo uff die Projektseide unner:
+http://jtrainer.stankowic-development.net
+Üwwer JTrainer v.
+Frag beantworde
+Näscht froog
+Antword A
+Antword B
+Antword C
+Antword D
+Antword E
+Antword ei'gewe
+Mach halt e'mo 'n Kadalog uff!
+Ausgewählde Kadalog:
+Anzahl vunn Frage:
+Frage
+Die Datei konn isch ned öffne.
+Import abgebroche
+Du Depp host die Froog vergeicht.
+Du host die Froog richtisch beantword.
+Du host de Kadalog durchgeschafft - klick halt e'mo uff 'Training beende' um e zammefassung zu lese.
+beantwortete Frage
+Richtische Antworde: 
+Falsche Antworde:
+Geb mir mo' n Tipp!
+Du host de Hinweis schu gelese!
+Mit Hinweise beantwort:
+RICHTISCH
+FALSCH
+Die Zeit is umm!
+Erfolgsquote:
+vunn
+Frage

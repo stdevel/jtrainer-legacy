@@ -1,0 +1,58 @@
+1.6
+Christian Stankowic <info@stankowic-development.net>
+Program ini merupakan pra-rilis, itu belum selesai.
+Harap melaporkan setiap masalah yang Anda temukan.
+informasi penting
+JTrainer v
+berkas
+Buka Katalog
+rincian Katalog
+nama Katalog:
+penjelasan:
+Author:
+tanggal:
+informasi tentang
+pelatihan Batal
+akhir Pelatihan
+akhir
+Pengaturan
+Modus random
+tertib
+satu kali
+Modus tak berujung
+?
+Tentang ...
+JTrainer adalah sebuah aplikasi untuk pengetahuan pelatihan.
+JTrainer adalah open source dan dirilis di bawah lisensi GPL.
+Untuk informasi lebih lanjut kunjungi situs web proyek di:
+http://jtrainer.stankowic-development.net
+Tentang JTrainer v
+Jawab pertanyaan
+pertanyaan berikutnya
+Jawaban A
+Jawaban B
+Jawaban C
+Jawaban D
+Jawaban E
+Jawaban Pertanyaan
+Silahkan buka katalog!
+File yany dipilih:
+Jumlah pertanyaan:
+pertanyaan
+File tidak bisa dibuka.
+Impor file yang dibatalkan
+Anda telah menjawab pertanyaan dujau salah.
+Anda telah menjawab pertanyaan dengan benar.
+Anda telah selesai nenqerjalcan katalog, klik 'End Workout' untuk melihat ringkasan singkat.
+menjawab pertanyaan
+Jawaban benar:
+Jawaban salah:
+Tampilkan catatan
+Catatan tersebut telah dilihat!
+Dijawab oleh referensi:
+MEMPERBAIKI
+SENAQ
+Waktu habis!
+Tingkat keberhasilan:
+dari
+Tanya

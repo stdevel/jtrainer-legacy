@@ -1,0 +1,41 @@
+4
+Test catalog
+Catalog for testing purposes
+Christian Stankowic <info@stankowic-development.net>
+31.10.2012
+1
+Please enter letter after A
+0
+B
+NONE
+NONE
+Please select answer B and C
+2
+A
+B
+C
+D
+XXX_NOANS
+1,2
+Hint for question 2
+Explanation for question 2
+Please select answers D and E
+2
+A
+B
+C
+D
+E
+3,4
+Hint for question 3
+Explanation for question 3
+What's the result of 12 multiplied with 12?
+1
+153
+144
+192
+120
+112
+1
+The number is smaller than 180
+Every kid knows that it's 144!
