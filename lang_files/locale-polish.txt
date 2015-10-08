@@ -1,4 +1,4 @@
-1.6
+1.61
 Jakub Jaszcza <jakub.jaszcza@gmail.com>
 Ten program nie jest jeszcze wersją końcową.
 Proszę o zgłoszenie ewentualnych znalezionych problemów w tej wersji. 
@@ -55,4 +55,5 @@ Parawidłowo
 Czas upłynął
 Postęp
 z
+pytania
 odpowiedzi

@@ -31,7 +31,7 @@ public class localizationFile
 	//variables
 	
 		//array declaration
-		final static double localeVersion = 1.6;		//class version
+		final static double localeVersion = 1.61;		//class version
 		String value[] = new String[100];			//array for translations
 		double fileVersion;					//string of language file version
 		String fileAuthor;						//language file author
@@ -162,6 +162,7 @@ public class localizationFile
 		value[53] = "success rate:";
 		value[54] = "from";
 		value[55] = "questions";
+		value[56] = "answers";
 		
 		//set flag for not-loaded file
 		fileLoaded = false;

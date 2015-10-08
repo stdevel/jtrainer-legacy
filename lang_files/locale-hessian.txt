@@ -1,4 +1,4 @@
-1.6
+1.61
 Christian Stankowic <info@stankowic-development.net>
 Des Programm is noch ned fertisch.
 Gib bescheid wennde Fehler finnst.
@@ -56,3 +56,4 @@ Die Zeit is umm!
 Erfolgsquote:
 vunn
 Frage
+Antworde

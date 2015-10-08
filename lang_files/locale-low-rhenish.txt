@@ -1,4 +1,4 @@
-1.6
+1.61
 Dennis Klein <dennis@klein2.de>
 Dat Programm is 'ne Vorab-Version, weil 'se noch nich' feddich is.
 Bitte sach bescheid, wenne Probleme findest.
@@ -56,3 +56,4 @@ Ey kumma auf'n Tacho! Zeit rum!
 Erfolgsquote:
 von
 Fragen
+Antworten

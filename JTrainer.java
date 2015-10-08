@@ -18,7 +18,7 @@ public class JTrainer extends JFrame implements ItemListener
 	//declarations
 	
 		//global variables
-		final static String version = "1.6";
+		final static String version = "1.61";
 		final static boolean betaRelease = false;
 		
 		//load translation (if any)
@@ -627,6 +627,8 @@ public class JTrainer extends JFrame implements ItemListener
 								//set answer
 								temp = this.thisCatalog.questions[thisQuestion].getAnswers();
 								debugMsg("Got answers array from question #" + thisQuestion);
+								//set number of answers
+								txtQuestion.setText(txtQuestion.getText() + " (" + this.thisCatalog.questions[thisQuestion].getCorrectAnswers().length + " " + locale.getValue(56) + ")");
 								//set answer if not marked as "unused"
 								for(int i=0;i<5;i++)
 								{
@@ -636,6 +638,13 @@ public class JTrainer extends JFrame implements ItemListener
 										chkAnswer[i].setText(temp[i]);
 										chkAnswer[i].setSelected(false);
 										debugMsg("Enabled checkbox #" + i + " and set text to: '" + temp[i] + "'");
+									}
+									else
+									{
+										chkAnswer[i].setEnabled(false);
+										chkAnswer[i].setText("");
+										chkAnswer[i].setSelected(false);
+										debugMsg("Disabled checkbox #" + i + " as it's unused for this question");
 									}
 								}
 								break;

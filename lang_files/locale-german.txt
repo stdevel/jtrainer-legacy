@@ -1,4 +1,4 @@
-1.6
+1.61
 Christian Stankowic <info@stankowic-development.net>
 Dieses Programm ist eine Vorab-Version, sie ist noch nicht fertig gestellt.
 Bitte melde alle Probleme, die Du findest.
@@ -56,3 +56,4 @@ Die Zeit ist um!
 Erfolgsquote:
 von
 Fragen
+Antworten

@@ -1,4 +1,4 @@
-1.6
+1.61
 Christian Stankowic <info@stankowic-development.net>
 Program ini merupakan pra-rilis, itu belum selesai.
 Harap melaporkan setiap masalah yang Anda temukan.
@@ -56,3 +56,4 @@ Waktu habis!
 Tingkat keberhasilan:
 dari
 Tanya
+Jawaban

@@ -1,4 +1,4 @@
-1.6
+1.61
 Oksan Günay
 Bu program bir ön sürümdür ve yapılanma aşamasındadır 
 Lüften bulduğunuz hatalari bize iletiniz.
@@ -56,3 +56,4 @@ Zamanınız sona erdi!
 Başarı oranıniz:
 sorudan
 Sorular
+cevaplar
