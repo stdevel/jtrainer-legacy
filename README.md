@@ -101,7 +101,7 @@ Every kid knows that it's 144!
 It is possible to translate JTrainer into other languages.
 
 ##Usage
-The english language file is included in the program. A different language file is loaded if it is named as "locale.txt" and exists in the same directory JTrainer is located. You can find additional langauge files on the project website or the source code (*__lang_file__ directory*).
+The english language file is included in the program. A different language file is loaded if it is named as ``locale.txt`` and exists in the same directory JTrainer is located. You can find additional langauge files on the project website or the source code (*__lang_file__ directory*).
 It is not possible to use old language files for newer JTrainer releases - you'll always have to use the latest version of your language file.
 
 ##Format
