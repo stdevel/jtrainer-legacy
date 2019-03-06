@@ -1,0 +1,105 @@
+JTrainerCLI 0.3, vom 6.September 2011
+
+
+
+CHANGELOG
+
+	- initial release
+
+
+
+AUSFUERHUNG
+
+	Sofern Java und die Desktop-Umgebung entsprechend konfiguriert wurden, genuegt meist ein Doppelklick auf das JAR-Archiv.
+	Falls die Verknuepfung nicht konfiguriert wurde, kann JTrain ueber die Kommandozeile aufgerufen werden:
+	
+		java -jar jtrainer.jar
+
+
+
+KATALOG- und DATENSATZFORMAT
+
+	KATALOGFORMAT
+	
+		Anzahl der Fragen
+		Katalogname
+		Katalogbeschreibung
+		Autor <email>
+		Datum
+		Zeitlimit (soll kein Limit gesetzt werden muss hier 0 eingesetzt werden)
+		(Datensaetze...)
+	
+	
+	DATENSATZFORMAT
+	
+		Frage
+		Typ
+		Antwort(en)
+		Nummer der richtigen Antwort (Zaehlung ab 0!)
+		Tipp zur Loesung (soll kein Hinweis angezeigt werden muss hier NONE stehen)
+		Erlaeuterung (soll keine Erklaerung angezeigt werden muss hier NONE stehen)
+		
+		HINWEIS: Es muessen entweder eine oder fuenf Antwortmoeglichkeiten angegeben werden
+	
+	
+	FRAGENTYPEN
+	
+		0		Nur eine Antwortmoeglichkeit, Antwort muss selbst eingetippt werden
+		1		Mehrere Antwortmoeglichkeiten, eine davon richtig
+		2		Mehrere Antwortmoeglichkeiten, mehrere davon richtig		
+	
+	
+	BEISPIELDATEI
+	
+		1
+		Test-Katalog
+		Das ist nur ein Testkatalog
+		Christian Stankowic <info@stankowic-development.net>
+		23.01.2011
+		1
+		Was ergibt 12 multipliziert mit 12?
+		1
+		153
+		144
+		192
+		120
+		112
+		1
+		Die Zahl ist kleiner als 180
+		Jedes Kind weiss, dass 12 multipliziert mit 12 144 ergibt!
+
+
+
+SPRACHDATEI
+
+	VERWENDUNG
+	
+		Die englische Sprachdatei ist fest in das Programm integriert. Eine andere
+		Sprachdatei wird geladen, wenn sie den Namen "locale.txt" hat und sich im
+		selben Ordner wie JTrainer befindet. Sprachdateien gibt es auf der Projektseite
+		im Download-Bereich. Fuer neue Programmversionen koennen keine alten
+		Sprachdateien verwendet werden. Es muss immer eine Sprachdatei mit der
+		selben Version wie JTrainer oder hoeher verwendet werden.
+		
+	FORMAT
+	
+		Soll eine eigene Sprachdatei erstellt werden, empfiehlt es sich eine fertige
+		Sprachdatei zu beziehen und anzupassen. Die erste Zeile gibt die JTrainerCLI-Version
+		an, fuer die die Sprachdatei konzipiert wurde.
+		
+		0.3
+		Autor <email>
+		Uebersetzungen
+		...
+
+
+
+BEKANNTE FEHLER UND EFFEKTE
+
+	- keine
+
+
+
+HINWEISE
+	
+	Diese Software unterliegt der GNU Public License 3.0, bitte die beigefuegte Datei "GPL" beachten
