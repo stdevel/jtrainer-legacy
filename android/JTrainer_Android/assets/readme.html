@@ -1,0 +1,154 @@
+<html>
+	<head>
+		<title>JTrainer Readme</title>
+		<style type="text/css">
+			body { background-color:#258c55; }
+			a:link,a:visited,a:active,a:focus { color:#222222; }
+		</style>
+	</head>
+	<body>
+		<img src="file:///android_asset/title.png" alt="JTrainer icon" />
+		<h2>JTrainer for Android - Readme</h2>
+		<br />
+		
+		<h2>Table of contents</h2>
+		<ul>
+			<li><a href="#whatis">What is JTrainer?</a></li>
+			<li><a href="#usecats">How to use catalogs</a></li>
+			<li><a href="#favs">Favorites</a></li>
+			<li><a href="#create">How to create your own catalogs</a></li>
+			<li><a href="#settings">Settings</a></li>
+			<li><a href="#licensing">Licensing</a></li>
+		</ul>
+
+		<h3 id="whatis">What is JTrainer?</h3>
+		JTrainer is a smart tool for training skills - it's an exam simulator. You can use it e.g. in preparation for an exam.
+		<br />
+
+		<h3 id="usecats">How to use catalogs</h3>
+		Catalogs have to be stored on the SD card in the directory <b>data/jtrainer</b>. To open a catalog, follow these steps:
+		<ol>
+			<li>Run the JTrainer application.</li>
+			<li>Tap on "<b>Start</b>".</li>
+			<li>Tap on the input area (which contains "<i>data/jtrainer/</i>") and edit the path to your catalog file, e.g. "<i>data/jtrainer/lpic101.txt</i>".</li>
+			<li>Tap on "<b>Open file</b>".</li>
+		</ol>
+		
+		You might also <a href="#usecats">add a catalog file to your favorites</a>, so that you can open it quicker.
+		<br />
+		
+		<h3 id="favs">Favorites</h3>
+		To start your catalogs quicker, you can use the favorites list. You can choose the catalogs from a list and open them without entering the path and filename.
+		<h4>Add a catalog to favorites</h4>
+		To add a catalog to the list of favorites, follow these steps:
+		<ol>
+			<li>Run the JTrainer application.</li>
+			<li>Tap on "<b>Favorites</b>".</li>
+			<li>Tap on the input area (which contains "<i>data/jtrainer/</i>") and edit the path to your catalog file, e.g "<i>data/jtrainer/lpic101.txt</i>".</li>
+			<li>Click on the save icon to add the catalog to the favorites.</li>
+		</ol>
+		<br />
+
+		<h4>Remove a catalog from favorites</h4>
+		To remove a catalog to the list of favorites, do the following steps:
+		<ol>
+			<li>Run the JTrainer application.</li>
+			<li>Tap on "<b>Favorites</b>".</li>
+			<li>Select the catalog from the list and click on the entry.</li>
+			<li>Click on "<b>Delete from favorites</b>" to remove the catalog from the favorites list.</li>
+		</ol>
+		<br />
+
+		<h4>Open a catalog from favorites</h4>
+		To add a catalog to the list of favorites, do the following steps:
+		<ol>
+			<li>Run the JTrainer application.</li>
+			<li>Tap on "<b>Favorites</b>".</li>
+			<li>Select the catalog from the list and click on the entry.</li>
+			<li>Click on "<b>Open</b>" to open the catalog.</li>
+		</ol>
+		<br />
+
+		<h4>Delete a catalog from favorites</h4>
+		To completely delete a catalog, do the following steps:
+		<ol>
+			<li>Run the JTrainer application.</li>
+			<li>Tap on "<b>Favorites</b>".</li>
+			<li>Select the catalog from the list and click on the entry.</li>
+			<li>Click on "<b>Delete file</b>" to delete the catalog.</li>
+		</ol>
+		<br />
+		
+		<h3 id="create">How to create your own catalogs</h3>
+		To create your own catalogs, you need a simple text edtior - you will have to write a file in a format as explained below.
+		In future, there will be a catalog editor included in the software - so stay tuned for updates. ;-)
+		<br />
+		A catalog file has the following structure:		
+		<pre>
+		Number of questions
+		Catalog name
+		Catalog description
+		Author <email>
+		Date
+		Time limit (if you don't want a time limit, enter 0 here)
+		(Data records...)
+		</pre>
+		
+		A data record has the following structure:
+		<pre>
+		Question
+		Type
+		Answer(s)
+		Number of correct answer (if multiple, counting starts at 0!)
+		Question hint (if you don't want a hint to be displayed, insert "NONE" here)
+		Question explanation (if you don't want to display a explanation insert "NONE" here)
+		</pre>
+		
+		There are several question types:
+		<ul>
+			<li><b>0</b> - only one answer, has to be typed using the keyboard</li>
+			<li><b>1</b> - multiple answers, one is correct, displayed in a list</li>
+			<li><b>2</b> - multiple answers, multiple are correct, displayed in a list</li>
+		</ul>
+		<br />
+		
+		An example of a complete question catalog is:
+		<pre>
+		1
+		Test catalog
+		This is a test catalog
+		Christian Stankowic <info@stankowic-development.net>
+		23.01.2011
+		1
+		What's the product of 12*12?
+		1
+		153
+		144
+		192
+		120
+		112
+		1
+		The number is smaller than 180
+		Everybody knows, that the product of 12*12 is 144!
+		</pre>
+		<br />
+		
+		<h3 id="settings">Settings</h3>
+		There are two options, which can be configured in the settings dialog:
+		<ul>
+			<li><b>Random mode</b> - Questions are asked randomly</li>
+			<li><b>Endless mode</b> - The catalogs continues after finishing, questions are repeated until you stop the simulation</li>
+		</ul>
+		<br />
+		
+		<h3 id="licensing">Licensing</h3>
+		JTrainer is published under the <b>CreativeCommon 3.0 BY-NC-SA license</b>. This means, you might use, modify and publish the software for free - <b>under the following conditions:</b>
+		<ul>
+			<li>You have to mention my name.</li>
+			<li>You're not allowed to use my software for commercial purposes</li>
+			<li>You have to use the same license if you "re-publish" my software.</li>
+		</ul>
+		For more information, see <b>CreativeCommons.org</b>.
+		<br />
+	<body>
+</html>

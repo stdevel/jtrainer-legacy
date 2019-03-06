@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:padding="4dip"
+  android:background="@color/green_dark"
+>
+		
+	<EditText
+		android:id="@+id/txtQuestion"
+		android:layout_height="100dp"
+		android:layout_width="match_parent"
+		android:layout_weight="1"
+		android:scrollbars="vertical"
+		android:singleLine="false"
+		android:editable="false"
+		android:text="@string/tx_exampleQuestion"
+		android:textSize="16sp">
+	</EditText>
+	
+	
+	
+	<ScrollView
+		android:id="@+id/scr_questionRad"
+	    android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="4"
+	>
+	
+		<RadioGroup android:id="@+id/radGroup" android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/rad_0" android:text="@string/tx_answerA" />
+			<RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/rad_1" android:text="@string/tx_answerB" />
+			<RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/rad_2" android:text="@string/tx_answerC" />
+			<RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/rad_3" android:text="@string/tx_answerD" />
+			<RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/rad_4" android:text="@string/tx_answerE" />
+		</RadioGroup>
+	
+	</ScrollView>
+	
+	
+	
+	<ScrollView
+		android:id="@+id/scr_questionChk"
+	    android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="4"
+	>
+	
+		<LinearLayout android:id="@+id/chkGroup" android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="vertical">
+			<CheckBox android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/chk_0" android:text="@string/tx_answerA" />
+			<CheckBox android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/chk_1" android:text="@string/tx_answerB" />
+			<CheckBox android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/chk_2" android:text="@string/tx_answerC" />
+			<CheckBox android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/chk_3" android:text="@string/tx_answerD" />
+			<CheckBox android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/chk_4" android:text="@string/tx_answerE" />
+		</LinearLayout>
+	
+	</ScrollView>
+	
+	
+	
+	<ScrollView
+		android:id="@+id/scr_questionTxt"
+	    android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+	>
+	
+		<LinearLayout android:id="@+id/txtGroup" android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="vertical">
+			<TextView
+				android:id="@+id/txt_questionHint" android:layout_height="wrap_content" android:layout_width="match_parent" android:text="@string/tx_txtQuestionHint"
+			/>
+			<EditText android:id="@+id/txt" android:layout_height="wrap_content" android:layout_width="match_parent" android:singleLine="true"/>
+		</LinearLayout>
+	
+	</ScrollView>
+	
+	
+	
+	<ScrollView
+		android:id="@+id/scr_questionSumm"
+	    android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+	>
+	
+		<LinearLayout android:id="@+id/summGroup" android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="vertical">
+		
+			<TextView
+				android:id="@+id/txt_questionSumm1" android:layout_height="wrap_content" android:layout_width="match_parent" android:gravity="center" android:textSize="20dp"
+			/>
+			<TextView
+				android:id="@+id/txt_questionSumm2" android:layout_height="wrap_content" android:layout_width="match_parent" android:gravity="center" android:textSize="20dp"
+			/>
+			<TextView
+				android:id="@+id/txt_questionSumm3" android:layout_height="wrap_content" android:layout_width="match_parent" android:gravity="center" android:textSize="20dp"
+			/>
+			<TextView
+				android:id="@+id/txt_questionSumm4" android:layout_height="wrap_content" android:layout_width="match_parent" android:gravity="center" android:textSize="20dp"
+			/>
+			<TextView
+				android:id="@+id/txt_questionSumm5" android:layout_height="wrap_content" android:layout_width="match_parent" android:gravity="center" android:textSize="24dp"
+			/>
+		
+		</LinearLayout>
+	
+	</ScrollView>
+	
+	
+	
+	<LinearLayout android:id="@+id/linearLayout1" android:layout_height="wrap_content" android:layout_width="match_parent">
+	
+		<Button
+			android:id="@+id/btn_questionAnswer"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:drawableTop="@*android:drawable/ic_menu_agenda"
+			android:text="@string/tx_answer"
+			android:textSize="10dp"
+			android:onClick="menueAktion"
+		/>
+		
+		<Button
+			android:id="@+id/btn_questionNext"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:drawableTop="@*android:drawable/ic_menu_directions"
+			android:text="@string/tx_next"
+			android:textSize="10dp"
+			android:onClick="menueAktion"
+		/>
+		
+		<Button
+			android:id="@+id/btn_questionHint"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:drawableTop="@android:drawable/ic_menu_search"
+			android:text="@string/tx_hint"
+			android:textSize="10dp"
+			android:onClick="menueAktion"
+		/>
+		
+		<Button
+			android:id="@+id/btn_questionExplanation"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:drawableTop="@android:drawable/ic_menu_search"
+			android:text="@string/tx_explanation"
+			android:textSize="10dp"
+			android:onClick="menueAktion"
+		/>
+		
+		<Button
+			android:id="@+id/btn_questionAbort"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:drawableTop="@android:drawable/ic_menu_delete"
+			android:text="@string/tx_abort"
+			android:textSize="10dp"
+			android:onClick="menueAktion"
+		/>
+		
+		<TextView 
+			android:id="@+id/txt_zeit"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:text="0:00"
+		/>
+		
+	</LinearLayout>
+
+</LinearLayout>

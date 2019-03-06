@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:padding="4dip"
+  android:background="@color/green_dark"
+>
+	
+	<LinearLayout android:id="@+id/linearLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+	
+	<EditText
+		android:id="@+id/tx_favoritesFileName"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:layout_weight="1"
+		android:text="@string/standardPath"
+		android:inputType="textNoSuggestions|textVisiblePassword"
+	/>
+	
+	<Button
+		android:id="@+id/btn_favoritesSave"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		
+		android:drawableLeft="@android:drawable/ic_menu_save"
+		android:onClick="menueAktion"
+	/>
+	
+	</LinearLayout>
+	
+	
+	<TextView
+		android:id="@+id/android:empty"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:gravity="center"
+		android:text="@string/tx_noFavs"
+	/>
+	
+	<ListView
+		android:id="@+id/android:list"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+	/>
+    
+</LinearLayout>

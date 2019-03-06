@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!-- Globales -->
+    <string name="app_name">JTrainer</string>
+    
+    <!-- Fehlermeldungen -->
+    <string name="err_fileNotFound">Die Datei wurde nicht gefunden.</string>
+    
+    <!--  Button Strings -->
+    <string name="tx_start">Starten</string>
+    <string name="tx_favorites">Favoriten</string>
+    <string name="tx_settings">Einstellungen</string>
+    <string name="tx_exit">Beenden</string>
+
+    <!--  Generische Strings -->
+    <string name="tx_back">Zurück</string>
+    <string name="tx_save">Speichern</string>
+    <string name="tx_chooseAction">Aktion auswählen</string>
+    <string name="tx_open">Öffnen</string>
+    <string name="tx_unlink">Von Favoriten entfernen</string>
+    <string name="tx_delete">Datei löschen</string>
+    <string name="tx_noFilenameReceived">Kein Dateiname empfangen</string>
+    <string name="tx_entryDeleted">Eintrag gelöscht!</string>
+    <string name="tx_fileDeleted">Datei gelöscht!</string>
+    
+    <!--  Oeffnen Strings -->
+    <string name="tx_dateioeffnen">Datei öffnen</string>
+    
+    <!--  Favoriten Strings -->
+    <string name="tx_noFavs">Keine Favoriten gespeichert</string>
+    <string name="tx_emptyFavWarning">Bitte geben Sie einen Dateipfad ein!</string>
+    <string name="tx_nonexistingFavWarning">Der Pfad existiert nicht!</string>
+    
+    <!--  Frage Strings -->
+    <string name="tx_exampleQuestion">Dies ist eine Beispielfrage, es ist keine wirkliche Frage. Wirklich, sie tut nur so, als wäre sie eine vollwertige Frage. Dies ist eine Beispielfrage, es ist keine wirkliche Frage. Wirklich, sie tut nur so, als wäre sie eine vollwertige Frage.Dies ist eine Beispielfrage, es ist keine wirkliche Frage. Wirklich, sie tut nur so, als wäre sie eine vollwertige Frage. Dies ist eine Beispielfrage, es ist keine wirkliche Frage. Wirklich, sie tut nur so, als wäre sie eine vollwertige Frage.</string>
+    <string name="tx_answerA">Antwort A</string>
+    <string name="tx_answerB">Antwort B</string>
+    <string name="tx_answerC">Antwort C</string>
+    <string name="tx_answerD">Antwort D</string>
+    <string name="tx_answerE">Antwort E</string>
+    <string name="tx_txtQuestionHint">Deine Antwort:</string>
+    <string name="tx_answer">Antworten</string>
+    <string name="tx_next">Weiter</string>
+    <string name="tx_hint">Hinweis</string>
+    <string name="tx_explanation">Erklärung</string>
+    <string name="tx_abort">Abbruch</string>
+    
+    <string name="tx_incorrectFlag">[FALSCH]</string>
+    <string name="tx_correctFlag">[RICHTIG]</string>
+    <string name="tx_incorrectAnswer">Du hast die Frage falsch beantwortet.</string>
+    <string name="tx_correctAnswer">Du hast die Frage korrekt beantwortet.</string>
+    
+    <string name="tx_answered">Fragen beantwortet</string>
+    <string name="tx_answeredOf">von</string>
+    <string name="tx_answeredCorrect">korrekt</string>
+    <string name="tx_answeredHints">benutzte(r) Hinweis(e)</string>
+    <string name="tx_answeredIncorrect">falsch</string>
+    <string name="tx_answeredQuote">Erfolgsquote</string>
+    
+    <string name="tx_aboutCatalog">Über Katalog</string>
+    <string name="tx_catalogAuthor">Autor:</string>
+    <string name="tx_catalogDescription">Beschreibung:</string>
+    <string name="tx_catalogDate">Datum:</string>
+    <string name="tx_dataError">Dateifehler</string>
+    <string name="tx_dataErrorExpl">Das Verzeichnis <b>data/jtrainer</b> auf der SD-Karte konnte nicht erstellt werden. Überprüfe die Zugriffsrechte oder erstelle den Ordner eigenhändig.</string>
+    
+    <!--  Einstellungen Strings -->
+    <string name="tx_settings_general">Allgemein</string>
+    <string name="tx_settings_privacy">Privatsphäre</string>
+    
+    <string name="tx_settings_random">Zufallsmodus</string>
+    <string name="tx_settings_random_summ">Fragen zufällig stellen</string>
+    <string name="tx_settings_endless">Endlosmodus</string>
+    <string name="tx_settings_endless_summ">Bereits gestellte Fragen wiederholen</string>
+    <string name="tx_settings_favorites">Favoriten nicht pflegen</string>
+    <string name="tx_settings_favorites_summ">Kein Speichern von Favoriten zulassen</string>
+    
+    
+    
+    <string name="tx_settings_help">Die Hilfe kommt noch</string>
+    <string name="tx_settings_license">JTrainer wird unter der CC 3.0 BY-NC-SA Lizenz veröffentlicht - besuche http://jtrainer.stankowic-development.net für mehr Informationen.</string>
+    
+    <!-- Menue Strings -->
+    <string name="tx_mnu_help">Hilfe</string>
+    <string name="tx_mnu_license">Lizenzinformationen</string>
+    <string name="tx_mnuQuestion_favorites">Zu Favoriten hinzufügen</string>
+    <string name="tx_mnuQuestion_details">Details</string>
+    <string name="tx_mnuQuestion_help">Hilfe</string>
+    
+    <!-- Öffnen Dialog Strings -->
+    <string name="tx_dlgOpen_btnOpen">Datei öffnen</string>
+    <string name="tx_dlgOpen_btnAbort">Abbrechen</string>
+    
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item
+    	android:id="@+id/mnuQuestion_details"
+    	android:title="@string/tx_mnuQuestion_details"
+    	android:icon="@android:drawable/ic_menu_help"
+    />
+    
+    <item
+    	android:id="@+id/mnuQuestion_help"
+    	android:title="@string/tx_mnuQuestion_help"
+    	android:icon="@android:drawable/ic_menu_help"
+    />    
+    
+</menu>

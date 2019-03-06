@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="favActions">
+        <item>@string/tx_open</item>
+        <item>@string/tx_unlink</item>
+        <item>@string/tx_delete</item>
+    </string-array>
+    <string-array name="favActionsValues">
+        <item>open</item>
+        <item>unlink</item>
+        <item>delete</item>
+    </string-array>
+</resources>
