@@ -1,0 +1,43 @@
+0.3
+Christian Stankowic <info@stankowic-development.net>
+von
+SYNTAX:	java jtrainercli [-v] [-o] [-e] dateiname
+--verbose, -v	Debug-Modus
+--ordered, -o	Geordneter Modus (keine zufälligen Fragen)
+--endless, -e	Endlosmodus (Fragen werden wiederholt)
+dateiname 	Dateiname des Fragenkatalogs
+Unbekanntes Kommando:
+Siehe 'help' für eine Liste der unterstützten Kommandos
+Die folgenden Kommandos stehen zur Verfügung:
+help		Zeigt diese Hilfe
+next		Springt zur nächsten Frage
+question	Wiederholt die Frage und zeigt ausgewählte Antworten
+hint		Zeigt den Hinweis (falls vorhanden)
+expl		Zeigt die Erklärung (falls vorhanden)
+stat		Zeigt die Statistik
+exit		Beendet das Programm
+Andere Eingaben werden als Antwort behandelt.
+Antwort:
+Bitte die Frage beantworten!
+Aktiviere
+Deaktiviere
+Bitte eine Zahl eingeben!
+Richtig!
+Falsch!
+Auf Wiedersehen.
+Nicht verfügbar.
+Insgesamt beantwortet:
+...mit Hinweisen:
+...richtig:
+...falsch:
+Quote:
+Derzeit nicht verfügbar.
+Fehler beim Laden der Datei. Beende...
+Keine Datei geladen, bitte Katalog öffnen.
+stop		Stoppt die Simulation
+open		Öffnet eine Datei
+info		Zeigt Informationen zum geladenen Katalog an
+Catalog:
+Description:
+Date:
+Anzahl Fragen:

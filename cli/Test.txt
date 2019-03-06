@@ -1,0 +1,31 @@
+3
+Test-Katalog
+Test-Katalog für Testzwecke
+Christian Stankowic <info@stankowic-development.net>
+19.01.2011
+1
+Bitte den Buchstaben nach A eingeben
+0
+B
+NONE
+NONE
+Bitte Antwort B und C wählen
+2
+A
+B
+C
+D
+E
+1,2
+Tipp zu Frage 2
+Erklärung zu Frage 2
+Bitte A wählen
+1
+A
+B
+C
+D
+E
+0
+Tipp zu Frage 3
+Erklärung zu Frage 3
