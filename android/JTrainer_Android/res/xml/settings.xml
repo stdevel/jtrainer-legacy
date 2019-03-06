@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <PreferenceCategory
+    	android:title="@string/tx_settings_general">
+    
+	    <CheckBoxPreference
+	    	android:key="randomMode"
+	    	android:title="@string/tx_settings_random"
+	    	android:summary="@string/tx_settings_random_summ"
+	    />
+	    
+	    <CheckBoxPreference
+	    	android:key="endlessMode"
+	    	android:title="@string/tx_settings_endless"
+	    	android:summary="@string/tx_settings_endless_summ"
+	    />
+    
+    </PreferenceCategory>
+    
+</PreferenceScreen>

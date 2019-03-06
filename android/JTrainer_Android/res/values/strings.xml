@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!-- Globales -->
+    <string name="app_name">JTrainer</string>
+    <string name="standardPath">data/jtrainer/</string>
+    <string name="version">Version</string>
+    
+    <!-- Fehlermeldungen -->
+    <string name="err_fileNotFound">The file was not found.</string>
+    
+    <!--  Menue Strings -->
+    <string name="tx_start">Start</string>
+    <string name="tx_favorites">Favorites</string>
+    <string name="tx_settings">Settings</string>
+    <string name="tx_exit">Exit</string>
+    
+    <!--  Generische Strings -->
+    <string name="tx_back">Back</string>
+    <string name="tx_save">Save</string>
+    <string name="tx_chooseAction">Choose action</string>
+    <string name="tx_open">Open</string>
+    <string name="tx_unlink">Delete from favorites</string>
+    <string name="tx_delete">Delete file</string>
+    <string name="tx_noFilenameReceived">No filename received</string>
+    <string name="tx_entryDeleted">Entry removed!</string>
+    <string name="tx_fileDeleted">File deleted!</string>
+    <string name="tx_dataError">Data error</string>
+    <string name="tx_dataErrorExpl">The directory <b>data/jtrainer</b> on the SD card can\'t be created. Check write protection or create the directory by hand.</string>
+    
+    <!--  Oeffnen Strings -->
+    <string name="tx_dateioeffnen">Open file</string>
+    
+    <!--  Favoriten Strings -->
+    <string name="tx_noFavs">No favorites defined</string>
+    <string name="tx_emptyFavWarning">Please insert a file path!</string>
+    <string name="tx_nonexistingFavWarning">That path doesn\'t exist</string>
+        
+    <!--  Frage Strings -->
+    <string name="tx_exampleQuestion">This is an example question - it is not a real question. Really, it\'s just pretending being an adequate question. This is an example question - it is not a real question. Really, it\'s just pretending being an adequate question.</string>
+    <string name="tx_answerA">Answer A</string>
+    <string name="tx_answerB">Answer B</string>
+    <string name="tx_answerC">Answer C</string>
+    <string name="tx_answerD">Answer D</string>
+    <string name="tx_answerE">Answer E</string>
+    <string name="tx_txtQuestionHint">Your answer:</string>
+    <string name="tx_answer">Answer</string>
+    <string name="tx_next">Next</string>
+    <string name="tx_hint">Show hint</string>
+    <string name="tx_explanation">Explaination</string>
+    <string name="tx_abort">Stop</string>
+    
+    <string name="tx_incorrectFlag">[INCORRECT]</string>
+    <string name="tx_correctFlag">[CORRECT]</string>
+    <string name="tx_incorrectAnswer">You answered the question incorrectly.</string>
+    <string name="tx_correctAnswer">You answered the question correctly.</string>
+    
+    <string name="tx_answered">questions answered</string>
+    <string name="tx_answeredOf">of</string>
+    <string name="tx_answeredCorrect">answered correctly</string>
+    <string name="tx_answeredHints">used hints</string>
+    <string name="tx_answeredIncorrect">answered incorrectly</string>
+    <string name="tx_answeredQuote">success rate</string>
+    
+    <string name="tx_aboutCatalog">About catalog</string>
+    <string name="tx_catalogAuthor">Author:</string>
+    <string name="tx_catalogDescription">Description:</string>
+    <string name="tx_catalogDate">Date:</string>
+    
+    <!--  Einstellungen Strings -->
+    <string name="tx_settings_general">General</string>
+    <string name="tx_settings_privacy">Privacy</string>
+    
+    <string name="tx_settings_random">Random mode</string>
+    <string name="tx_settings_random_summ">Ask questions randomly</string>
+    <string name="tx_settings_endless">Endless mode</string>
+    <string name="tx_settings_endless_summ">Repeat asked questions</string>
+    <string name="tx_settings_favorites">Don\'t collect favorites</string>
+    <string name="tx_settings_favorites_summ">Disallow saving of favorites</string>
+    
+    <string name="tx_settings_help">Help will follow soon</string>
+    <string name="tx_settings_license">JTrainer is published under the CC 3.0 BY-NC-SA license - see http://jtrainer.stankowic-development.net for further information.</string>
+    
+    <!-- Menue Strings -->
+    <string name="tx_mnu_help">Help</string>
+    <string name="tx_mnu_license">License information</string>
+    <string name="tx_mnuQuestion_favorites">Add to favorites</string>
+    <string name="tx_mnuQuestion_details">Details</string>
+    <string name="tx_mnuQuestion_help">Help</string>
+    
+    <!-- Öffnen Dialog Strings -->
+    <string name="tx_dlgOpen_btnOpen">Open file</string>
+    <string name="tx_dlgOpen_btnAbort">Abort</string>
+    
+</resources>
