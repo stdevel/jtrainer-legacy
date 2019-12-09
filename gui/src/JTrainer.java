@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.io.*;
 import java.util.Timer;
 import java.util.TimerTask;
+import java.util.concurrent.TimeUnit;
 
 
 /**
@@ -76,6 +77,11 @@ public class JTrainer extends JFrame implements ItemListener {
      * flag whether questions should be repeated
      */
     private boolean catalogEndless = false;
+
+    /**
+     * String for current ticker time
+     */
+    public String lastedTicker;
 
     /**
      * the one and only: temp
@@ -1069,9 +1075,14 @@ public class JTrainer extends JFrame implements ItemListener {
                 txtQuestion.append(numbAnswered + " " + locale.getValue(44) + "\n" + locale.getValue(45) + " " + numbCorrect + "\n" + locale.getValue(46) + " " + numbIncorrect + "\n" + locale.getValue(49) + " " + numbHints + "\n\n");
             } else {
                 // ordered mode --> number of questions = number of questions in catalog
-                txtQuestion.append(numbAnswered + " " + locale.getValue(44) + " (" + locale.getValue(54) + " " + this.thisCatalog.getSize() + " " + locale.getValue(55) + ")" + "\n" + locale.getValue(45) + " " + numbCorrect + "\n" + locale.getValue(46) + " " + numbIncorrect + "\n" + locale.getValue(49) + " " + numbHints + "\n\n");
+                txtQuestion.append(numbAnswered + " " + locale.getValue(44) + " (" + locale.getValue(54) + " " + this.thisCatalog.getSize() + " " + locale.getValue(55) + ")" + "\n" + locale.getValue(45) + " " + numbCorrect + "\n" + locale.getValue(46) + " " + numbIncorrect + "\n" + locale.getValue(49) + " " + numbHints);
             }
             debugMsg("Answered: " + numbAnswered + ", Correct: " + numbCorrect + ", Incorrect: " + numbIncorrect + ", Used hints: " + numbHints);
+
+            // show required time
+            txtQuestion.append(
+                    "\n" + locale.getValue(58) + " " + this.lastedTicker + "\n\n"
+            );
 
             // calculate and write success rate
 
@@ -1139,35 +1150,45 @@ public class JTrainer extends JFrame implements ItemListener {
     class Ticker extends TimerTask {
         // variables
         private int seconds;
+        private int target_seconds;
+        int minutes;
+        int secs;
 
-        Ticker(int seconds)
-            /* constructor */ {
+        Ticker(int seconds) {
+            this.target_seconds = seconds;
             this.seconds = seconds;
         }
 
-        public void run()
-            /* main procedure */ {
-            // print (formatted) remaining time --> get amount of remaining minutes
-            int tempTime = seconds / 60;
+        /**
+         * returns the current ticker time
+         * @return current ticker time (seconds)
+         */
+        private int getCurrentTime() {
+            return seconds;
+        }
 
-            // set remaining minutes and seconds (if any)
-            int mins;
-            int secs;
-            if (tempTime != 0) {
-                mins = tempTime;
-                secs = seconds - (mins * 60);
-            } else {
-                mins = 0;
-                secs = seconds;
-            }
+        /**
+         * returns the lasted ticker time
+         * @return lasted ticker time (seconds)
+         */
+        private int getNeededTime() {
+            return (target_seconds - seconds);
+        }
 
-            // print time - set 0 as prefix if 10 seconds or less
-            if (secs < 10) {
-                lblTimer.setText(mins + ":" + "0" + secs);
-            } else {
-                lblTimer.setText(mins + ":" + secs);
-            }
+        /**
+         * converts seconds to a time string (xx:xx)
+         * @param seconds seconds as integer
+         * @return time string
+         */
+        private String secondsToTime(int seconds) {
+            return String.format("%02d:%02d", seconds / 60, seconds % 60);
+        }
 
+
+        public void run()  {
+            // update UI
+            lastedTicker = this.secondsToTime(this.getNeededTime());
+            lblTimer.setText(this.secondsToTime(this.getCurrentTime()));
             // decrease seconds
             seconds--;
         }

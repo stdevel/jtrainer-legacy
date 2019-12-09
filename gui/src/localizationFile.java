@@ -152,6 +152,7 @@ public class localizationFile {
         value[55] = "questions";
         value[56] = "answers";
         value[57] = "left";
+        value[58] = "Required time:";
 
         // set flag for not-loaded file
         fileLoaded = false;
