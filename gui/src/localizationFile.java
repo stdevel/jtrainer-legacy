@@ -1,26 +1,5 @@
 import java.io.*;
-
-
-
-/*
-
-	##########
-	localization class
-	##########
-	
-	
-	
-	FUNCTION NAME					DESCRIPTION
-	###CONSTRUCTOR###
-	localizationFile(String file)				class for localization using language files
-	###DATASET FUNCTIONS###
-	loadDefaults()					load standard translation
-	getValue(int pointer)					return translation
-	###DEBUG FUNCTIONS###
-	printLocaleData()					dump translation data
-	debugMsg(String msg)				write debug message
-
-*/
+import java.nio.charset.StandardCharsets;
 
 
 
@@ -31,11 +10,11 @@ public class localizationFile
 	//variables
 	
 		//array declaration
-		final static double localeVersion = 1.7;		//class version
-		String value[] = new String[100];			//array for translations
-		double fileVersion;					//string of language file version
-		String fileAuthor;						//language file author
-		boolean fileLoaded = true;				//boolean for successfully loaded file
+		final static double localeVersion = 1.7;	//class version
+		final String[] value = new String[100];		//array for translations
+		double fileVersion;							//string of language file version
+		String fileAuthor;							//language file author
+		boolean fileLoaded = true;					//boolean for successfully loaded file
 	
 	
 	
@@ -45,57 +24,57 @@ public class localizationFile
 		
 		try
 		{
-			//try instancing FileReader and BufferedReader
+			// try instancing FileReader and BufferedReader
 			System.out.println("About to load " + file + "...");
-			BufferedReader targetFile = new BufferedReader(new InputStreamReader(new FileInputStream(file), "UTF-8"));
+			BufferedReader targetFile = new BufferedReader(new InputStreamReader(new FileInputStream(file), StandardCharsets.UTF_8));
 			
-			//read version
+			// read version
 			fileVersion = Double.parseDouble(targetFile.readLine());
 			fileAuthor = targetFile.readLine();
 			
-			//temporary counter and string for reading a line
+			// temporary counter and string for reading a line
 			String temp;
-			int zeiger=0;
+			int pointer =0;
 			
-			//read strings if version matches
+			// read strings if version matches
 			if(fileVersion >= localeVersion)
 			{
-				//version matches - read strings
+				// version matches - read strings
 				debugMsg("Loading localization file '" + file + "' from '" + fileAuthor + "' - version '" + fileVersion + "', class version is: '" + localeVersion + "'");
 				while(true)
 				{
-					//read next line
+					// read next line
 					temp = targetFile.readLine();
 					
-					//abort reading if EOF reached
+					// abort reading if EOF reached
 					if(temp == null) { break; }
 					else
 					{
-						//Add line to string array
-						value[zeiger] = temp;
-						zeiger++;
+						// add line to string array
+						value[pointer] = temp;
+						pointer++;
 					}
 				}
 				
-				//write message for loaded file
-				debugMsg("Loaded " + (zeiger-1) + " definitions from locale.txt");
+				// write message for loaded file
+				debugMsg("Loaded " + (pointer -1) + " definitions from locale.txt");
 				fileLoaded = true;
 			}
 			else
 			{
-				//version doesn't match --> abort and load standard translation
+				// version doesn't match --> abort and load standard translation
 				debugMsg("Wrong localization file version '" + fileVersion + "', needed version is: '" + localeVersion + "' or higher.");
 				this.loadDefaults();
 			}
 		}
 		catch(java.io.IOException exp)
 		{
-			//write error message
+			// write error message
 			debugMsg("Error loading " + file + ", falling back to built-in english...\n");
 			debugMsg("Stack trace:");
 			exp.printStackTrace();
 
-			//load standard translation
+			// load standard translation
 			this.loadDefaults();
 		}
 	}
@@ -105,7 +84,7 @@ public class localizationFile
 	private void loadDefaults()
 	/* load standard translation */
 	{
-		//load standard translation
+		// load standard translation
 		value[0] = "This program is an pre-release - it hasn't been finished, yet.";
 		value[1] = "Feel free to report any bugs/errors you may encounter.";
 		value[2] = "Important information";
@@ -165,7 +144,7 @@ public class localizationFile
 		value[56] = "answers";
 		value[57] = "left";
 		
-		//set flag for not-loaded file
+		// set flag for not-loaded file
 		fileLoaded = false;
 	}
 	
@@ -182,10 +161,10 @@ public class localizationFile
 	public void printLocaleData()
 	/* dump translation data */
 	{
-		//was a translation file successfully loaded?
-		if(this.fileLoaded == false)
+		// was a translation file successfully loaded?
+		if(!this.fileLoaded)
 		{
-			//No - dump integrated definitions
+			// no - dump integrated definitions
 			debugMsg("locales file was NOT loaded - using built-in localization");
 			for(int i=0;i<this.value.length;i++) { debugMsg("BUILT-IN #" + i + ": " + this.value[i]); }
 		}
@@ -202,7 +181,7 @@ public class localizationFile
 	private void debugMsg(String debugMessage)
 	/* write debug message */
 	{
-		//write message
+		// write message
 		System.out.println("LF: " + debugMessage);
 	}
 	
