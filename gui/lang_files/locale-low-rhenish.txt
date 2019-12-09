@@ -1,0 +1,59 @@
+1.61
+Dennis Klein <dennis@klein2.de>
+Dat Programm is 'ne Vorab-Version, weil 'se noch nich' feddich is.
+Bitte sach bescheid, wenne Probleme findest.
+Wichtige Information | Wichtige Information
+JTrainer v.
+Datei
+Katalog öffnen
+Katalogdetails
+Katalogname:
+Beschreibung:
+Autor:
+Datum:
+Informationen über
+Training abbrechen 
+Training beenden
+Beenden
+Einstellungen
+Zufallsmodus
+Geordnet
+Einmal
+Endlosmodus
+?
+Über...
+JTrainer is 'ne Anwendung um sich Wissen anzueignen.
+JTrainer is quelloffen und wird unter der GPL-Lizenz veröffentlicht
+Weitere Infos findste auffer Projektseite:
+http://jtrainer.stankowic-development.net
+Über JTrainer v.
+Frage beantworten
+Nächste Frage
+Antwort A
+Antwort B
+Antwort C
+Antwort D
+Antwort E
+Antwort eingeben
+Ey mach den Katalog auf!
+Ausgewählte Datei:
+Anzahl der Fragen:
+Frage
+Mist! Die Datei konnte nicht geöffnet werden.
+Datei-Import abgebrochen
+Wa? Die Frage war mal falsch, Keule.
+Jau! Dat war richtig!
+Du hast den Katalog durch, klick ma auf 'Training beenden', um 'ne Zusammenfassung anzuzeigen
+beantwortete Fragen
+Richtige Antworten: 
+Falsche Antworten:
+Hinweis anzeigen
+Nee nee, den Hinweis haste schon gesehen!
+Hier haste gefudelt:
+JAU!
+NEE!
+Ey kumma auf'n Tacho! Zeit rum!
+Erfolgsquote:
+von
+Fragen
+Antworten

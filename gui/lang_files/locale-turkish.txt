@@ -1,0 +1,59 @@
+1.61
+Oksan Günay
+Bu program bir ön sürümdür ve yapılanma aşamasındadır 
+Lüften bulduğunuz hatalari bize iletiniz.
+Önemli bilgi
+JTrainer v.
+Dosya
+Soru kataloğunu açiniz 
+Soru kataloğu detayları
+Katalog adı:
+Açıklama
+Soru bankasını hazırlayan:
+Tarih:
+Program hakkında bilgiler
+Çalışmayı iptal et
+Çalışmayı  bitir
+Programi bitir
+Ayarlar
+Rasgele soru modu
+Düzenli soru modu
+Tek soru modu
+Limitsiz soru modu
+?
+Jtrainer
+JTrainer bilginizi geliştirmeniz için kullanabileceğiniz bir uygulamadır
+JTrainer‘ in program kodu herkeze açık  ve GPL- Lisansı ile kullanima sunulmuştur.
+Daha fazla bilgi için Projesayfasına  ugraybilirsiniz:
+http://jtrainer.stankowic-development.net
+JTrainer versiyonu hakkında
+Soruyu cevapla
+Sonraki soruya geç
+Cevap A
+Cevap B
+Cevap C
+Cevap D
+Cevap E
+Cevap yaz
+Lütfen bir Soru kataloğunu aç 
+Soru sayısı 
+Toplam soru sayısı           
+Soru
+Dosya açılamadı 
+Dosya aktar
+Soruyu yanlış cevapladınız 
+Soruyu doğru cevapladınız            
+Tebrikler! Soru katalogunu bitirdiniz, kisa bir özet icin lütfen "Çalışmayı bitir‘ e" tıklayınız.  
+Toplam cevaplanan soru miktarı  
+Dogru cevaplanan sorular:
+Yanlış cevaplanan sorular:
+Ipucu ver
+Ipucunu kullandiniz 
+Ipucuyla cevaplanan soru miktarı:
+Dogru
+Yanlış
+Zamanınız sona erdi!
+Başarı oranıniz:
+sorudan
+Sorular
+cevaplar

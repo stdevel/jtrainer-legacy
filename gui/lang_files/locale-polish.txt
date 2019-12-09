@@ -1,0 +1,59 @@
+1.61
+Jakub Jaszcza <jakub.jaszcza@gmail.com>
+Ten program nie jest jeszcze wersją końcową.
+Proszę o zgłoszenie ewentualnych znalezionych problemów w tej wersji. 
+Ważne informacje
+JTrainer v.
+Plik
+Otwórz katalog
+Szczegóły katalogu
+Nazwa katalogu
+Opis:
+Autor:
+Data:
+Informacje o
+Przerwanie treningu
+Zakończenie treningu
+Zakończ
+Ustawienia
+Tryb losowy
+uporządkowany
+Raz
+Tryb nieskończony
+?
+O...
+JTrainer jest programem do trenowania wiedzy
+JTrainer jest programem OpenSource i opublikowany przy pomocy licencji GPL.
+Więcej informacji można uzyskać pod
+http://jtrainer.stankowic-development.net
+O JTrainer
+Odpowiedz na pytanie
+Następne pytanie
+Odpowiedź A
+Odpowiedź B
+Odpowiedź C
+Odpowiedź D
+Odpowiedź E
+Udziel odpowiedzi
+Proszę otworzyć katalog!
+Wybrany plik:
+Ilość pytań
+Pytanie
+Plik nie może zostać otworzony
+Import pliku przerwany
+Zła odpowiedź
+Poprawna odpowiedź
+Odpowiedziałeś na wszystkie pytania. Kliknij na 'Zakończ trening', aby pokazać podsumowanie
+Pytania na które udzielono odpowiedzi
+poprawne odpowiedzi 
+złe odpowiedzi
+pokaż podpowiedź
+Ta podpowiedź była już przez Ciebie czytana
+Odpowiedź przy użyciu podpowiedzi
+Parawidłowo
+źle
+Czas upłynął
+Postęp
+z
+pytania
+odpowiedzi
