@@ -18,11 +18,12 @@ public class JTrainer extends JFrame implements ItemListener
 	//declarations
 	
 		//global variables
-		final static String version = "1.61";
-		final static boolean betaRelease = false;
+		final static String version = "1.7";
+		final static boolean betaRelease = true;
 		
 		//load translation (if any)
-		public localizationFile locale = new localizationFile("locale.txt");
+		//public localizationFile locale = new localizationFile("locale.txt");
+		public localizationFile locale = new localizationFile(System.getProperty("user.dir") + File.separator + "locale.txt");
 		
 		//database variables
 		public questionCatalog thisCatalog;
@@ -576,7 +577,11 @@ public class JTrainer extends JFrame implements ItemListener
 			
 			//write question and set title
 			txtQuestion.setText(this.thisCatalog.questions[thisQuestion].getQuestion());
-			lblStatistic.setText(" " + locale.getValue(38) + " " + (thisQuestion+1) + "/" + catalogQuestions);
+			if(catalogEndless == false) {
+				lblStatistic.setText(" " + locale.getValue(38) + " " + (thisQuestion+1) + "/" + catalogQuestions + " (" + (this.thisCatalog.getRemainingQuestions()+1) + " " + locale.getValue(57) + ")");
+			} else {
+				lblStatistic.setText(" " + locale.getValue(38) + " " + (thisQuestion + 1) + "/" + catalogQuestions);
+			}
 			debugMsg("Title set to: " + (thisQuestion+1) + "/" + catalogQuestions);
 			
 			//remove previous elements

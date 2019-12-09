@@ -31,7 +31,7 @@ public class localizationFile
 	//variables
 	
 		//array declaration
-		final static double localeVersion = 1.61;		//class version
+		final static double localeVersion = 1.7;		//class version
 		String value[] = new String[100];			//array for translations
 		double fileVersion;					//string of language file version
 		String fileAuthor;						//language file author
@@ -94,7 +94,7 @@ public class localizationFile
 			debugMsg("Error loading " + file + ", falling back to built-in english...\n");
 			debugMsg("Stack trace:");
 			exp.printStackTrace();
-			
+
 			//load standard translation
 			this.loadDefaults();
 		}
@@ -128,10 +128,10 @@ public class localizationFile
 		value[19] = "Endless";
 		value[20] = "?";
 		value[21] = "About...";
-		value[22] = "JTrainer is an application for training knowledge.";
-		value[23] = "JTrainer is open source and is published under the terms of GPL.";
+		value[22] = "JTrainer is an exam simulator.";
+		value[23] = "JTrainer is open source and published under the terms of GPL.";
 		value[24] = "Visit the project page for further details:";
-		value[25] = "http://jtrainer.stankowic-development.net";
+		value[25] = "https://github.com/stdevel/jtrainer-legacy";
 		value[26] = "About JTrainer v.";
 		value[27] = "Answer question";
 		value[28] = "Next question";
@@ -163,6 +163,7 @@ public class localizationFile
 		value[54] = "from";
 		value[55] = "questions";
 		value[56] = "answers";
+		value[57] = "left";
 		
 		//set flag for not-loaded file
 		fileLoaded = false;

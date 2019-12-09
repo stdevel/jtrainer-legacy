@@ -239,6 +239,12 @@ public class questionCatalog
 	{
 		return this.questions.length;
 	}
+
+	public int getRemainingQuestions()
+	/* return amount of remaining questions */
+	{
+		return this.elementList.size();
+	}
 	
 	public void printCatalog()
 	/* write out question catalog */
@@ -260,7 +266,7 @@ public class questionCatalog
 	private void remove(int id)
 	/* remove entry from access index */
 	{
-		for(int i=0;i<this.elementList.size();i++)
+		for(int i=0;i<this.getRemainingQuestions();i++)
 		{
 			if(elementList.get(i) == id) { this.elementList.remove(i); }
 		}
@@ -270,9 +276,9 @@ public class questionCatalog
 	/* write out access index */
 	{
 		//write out access index if entries found
-		if(this.elementList.size() > 0)
+		if(this.getRemainingQuestions() > 0)
 		{
-			for(int i=0;i<this.elementList.size();i++)
+			for(int i=0;i<this.getRemainingQuestions();i++)
 			{
 				debugMsg("RI: #" + i + " ==> " + elementList.get(i));
 			}
@@ -319,9 +325,9 @@ public class questionCatalog
 		{
 			//random mode --> get next possible random ID and remove entry from array
 			//TODO: repeat
-			if(this.elementList.size() >= 1 || this.modeEndless == true)
+			if(this.getRemainingQuestions() >= 1 || this.modeEndless == true)
 			{
-				int temp = this.elementList.get(randomGenerator.nextInt(this.elementList.size()));
+				int temp = this.elementList.get(randomGenerator.nextInt(this.getRemainingQuestions()));
 				debugMsg("Random mode, remaining questions, will continue with question #" + temp);
 				if(this.modeEndless == false) { this.remove(temp); }
 				return temp;
