@@ -225,7 +225,7 @@ public class JTrainer extends JFrame implements ItemListener {
         // instance new window, set size and show
         JTrainer window = new JTrainer("JTrainer v." + version);
         window.pack();
-        window.setSize(520, 500);
+        window.setSize(650, 500);
         window.setVisible(true);
     }
 
