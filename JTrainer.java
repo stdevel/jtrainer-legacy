@@ -628,7 +628,14 @@ public class JTrainer extends JFrame implements ItemListener
 								temp = this.thisCatalog.questions[thisQuestion].getAnswers();
 								debugMsg("Got answers array from question #" + thisQuestion);
 								//set number of answers
-								txtQuestion.setText(txtQuestion.getText() + " (" + this.thisCatalog.questions[thisQuestion].getCorrectAnswers().length + " " + locale.getValue(56) + ")");
+								if(this.thisCatalog.questions[thisQuestion].getCorrectAnswers().length < 5) {
+                                                                        txtQuestion.setText(txtQuestion.getText() + " (" + this.thisCatalog.questions[thisQuestion].getCorrectAnswers().length + " " + locale.getValue(56) + ")");
+                                                                }
+                                                                else
+                                                                {
+                                                                        txtQuestion.setText(txtQuestion.getText());
+                                                                }
+
 								//set answer if not marked as "unused"
 								for(int i=0;i<5;i++)
 								{
